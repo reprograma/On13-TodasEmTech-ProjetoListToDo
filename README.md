@@ -48,7 +48,7 @@ Esta é a 9ª semana da turma online: Todas em Tech - Front-end, nesta aula do d
 - Não é permitido o uso de nenhuma biblioteca/framework para construção do projeto;
 - Temos um layout que deve ser seguido, mas é permitido incrementar seu projeto para entregar; 
 
-##### [Projeto modelo]()
+##### [Projeto modelo](https://reprograma-on13front-todolist-hoi3buouj-lilitbandeira.vercel.app)
 
 ### Instruções:
 
@@ -83,11 +83,123 @@ Esta é a 9ª semana da turma online: Todas em Tech - Front-end, nesta aula do d
 
 #### 1.1. Objetos
 
+  _Criando um objeto:_
+
+  ```
+  const aluna = new Object()
+  aluna.nome = "Lilit"
+  aluna.curso = "frontend"
+  aluna.cidade = "Recife"
+
+  const monitora = {
+    nome: "Carol",
+    curso: "frontend",
+    cidade: "Brasília",
+  }
+  ```
+
+  _Acessando o valor de uma propriedade do objeto:_
+
+  ```
+  console.log(aluna.curso)
+  console.log(monitora.nome)
+
+  ```
+
+  _Desestruturando um objeto:_
+
+  ```
+  const { nome, curso, cidade } = aluna
+  ```
 #### 1.2. Arrays
 
+  _Criando uma array:_
+
+  ```
+  const alunas = ["Lilit, Analu, Beatriz, Simara"]
+  const cidades = new Array('Recife', 'São Paulo', 'Manaus')
+  const cursos = "frontend backend".slit(' ')
+  const tecnologias = Array.of('HTML', 'CSS', JS)
+  ```
+
+  _Acessando o valor de um elemento da array:_
+  
+  ```
+    console.log(alunas[1])
+  ```
+
+  _Desestruturando um objeto:_
+
+  ```
+  const [ frontend, backend ] = cursos
+  ```
+
+  _Interando uma array (Métodos)_
+
+  arrays para exemplos:
+  ```
+  const frutas = ['🍎', '🍇', '🍎', '🍌', '🍎', '🥑']
+  ```
+
+  `find:`
+
+  ```
+  const encontrarPrimeiro = frutas.find(element => element == 🍇')
+  console.log(encontrarPrimeiro) // retorno 🍇
+  ```
+
+ `filter:`
+
+  ```
+  const filtrarPor = frutas.filter(element => element == "🍎")
+  console.log(filtrarPor) // retorno ['🍎', '🍎', '🍎']
+  ```
+
+ `map:`
+
+  ```
+  const executarTodos = frutas.map(element => element = "🍇")
+  console.log(executarTodos) // retorn  ['🍇', '🍇', '🍇', '🍇', '🍇', '🍇']
+  ```
+
+ `forEach:`
+
+  ```
+  const verTodos = frutas.forEach(element => console.log(element))
+  console.log(verTodos) // retorno  🍎🍇🍎🍌🍎🥑
+  ```
+
 #### 1.3. DOM
+  
+<img src='./assets/dom.png' width=500 alt='árvore de estrutura do DOM'>
+
+  __>__ DOM é uma sigla que significa Document Object Model. Quando a página é carregada o browser cria um objeto que representa os elementos da página a partir do HTML. A forma mais fácil de acessar e manipular o DOM é usando JavaScript.
+
+  - Document: representa o documento HTML
+  - Element:  são todas as tags que estão no arquivo HTML e se transformam em elementos da árvore DOM
+  - Text: é o conteúdo de texto que vai entre os elementos (tags).
+  - Attribute: são os todos atributos para um nó específico. No caso, o attribute href="http:// instagram .com/lilitbandeira" está associado ao elemento, outros exemplos de atributos são o class, o src, o id, entre outros.
+  
+  __>__ O DOM é a representação do objeto do documento HTML e atua como uma interface de programação que permite a manipulação de sua estrutura com o JavaScript ou outras linguagens. Podemos manipular o DOM para realizar alterações na estrutura do HTML, alterar estilos, modificar conteúdos e adicionar diversos eventos.
+
 
 #### 1.4. Eventos
+
+Um eventos é um conjunto de ações que são realizadas em um determinado elemento da página web, seja ele um texto, uma imagem, ou uma div, por exemplo. Grande parte dos eventos nascem na interação da usuária com a aplicação.
+
+Para manipular podemos usar Event listener que adiciona ou remove um evento sobre qualquer elemento. O Event Listener disponibiliza duas funções principais, são elas:
+
+- **addEvent** - Adiciona uma função que será disparada quando ocorrer determinado evento no objeto.
+- **removeEvent** - Remove um listener previamente adicionado em um objeto e retorna true em caso de sucesso.
+
+  ```
+  elemento.addEventListener('click', function (evento) {
+    //ação a ser executada no clique do elemento
+    console.log(evento);
+  });
+  ```
+
+Usamos o método preventDefault() para cancelar a ação padrão que pertence a um determinado evento.
 
 ---
 
@@ -95,48 +207,42 @@ Esta é a 9ª semana da turma online: Todas em Tech - Front-end, nesta aula do d
 
 #### 2.1. Etapas
 
-- **1.**
-    - Adicionar itens na lista
-    - Poder dar check neles
-    - Limpar campo de texto depois que insere o item na lista
-- **2.**
-    - Validar campo de texto para não entrar itens vazios ou somente com espaços
-    - Poder excluir itens da lista individualmente;
-- **3.**
-    - Marcar todos os itens como feito
-    - Limpar lista, excluir todos os itens da lista
-- **4.**
-    - Ao clicar em marcar todos, mudar texto do botão para desmarcar todos
+- __1.__ HTML
+    [ ] Criar estrutura da página;
+- __2.__ CSS
+    [ ] Adicionar estilo;
+- __3.__ JavaScript
+    [ ] __3.1__ Capturar dados de __Entrada__ da usuária;
+    [ ] __3.2__ Adicionar itens na lista;
+    [ ] __3.3__ Marcar item como realizado;
+    [ ] __3.4__ Limpar input após adicionar item;
+    [ ] __3.5__ Validar campo de texto para não entrar itens vazios ou somente com espaços;
+    [ ] __3.6__ Poder excluir itens da lista individualmente;
+    [ ] __3.7__ Marcar/Desmarcar todos os itens como feito;
+    [ ] __3.8__ Limpar lista, excluir todos os itens da lista;
+    [ ] __3.9__ Ao clicar em marcar todos, mudar texto do botão para desmarcar todos;
     
+    ##### Para usar no projeto: 🔘 🟢 🟣 🗑
 #### 2.2. Desafio
 
-- Quando o input está vazio ou com espaços, mostre uma mensagem de erro abaixo do input ao invés de um alert
+- Criar animação pata quando a usuária tentar criar uma tarefa com uma string vazia ou somente com espaços ao invés de somente um alert;
+- Criar uma função que mude o texto do botão _Marcar/Desmarcar todos_: Se houver pelo menos uma tarefa desmarcada (_Marcar todos_) e caso todas sejam desmarcadas manualmente (_Desmarcar todos_)
 
 ## Referências 
 
-| Conteúdo      | Fonte              | Link                                                                                                                                       |
-| ------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| ------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| ------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| ------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| ------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| ------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| ------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| ------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| ------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| ------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| ------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| ------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Conteúdo      | Fonte              | Link                                                                                |
+| ------------- | ------------------ | ----------------------------------------------------------------------------------- |
+| Font Family   | Google Fonts       | https://fonts.google.com/specimen/Poppins?preview.size=33&query=po                  |
+| Paleta cores  | flat UI colors     | https://flatuicolors.com/palette/ca                                                 |
+| Objetos       | MDN                | https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Objects/Basics            |
+| Arrays        | MDN                | https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/Arrays        |
+| DOM           | MDN                | https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model              |
+| Eventos       | MDN                | https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/Events    |
 
-####Extras
+## Agradecimento:  
 
-| Complementares | Canal           | Link                                        |
-| -------------- | --------------- | ------------------------------------------- |
-| -------------- | --------------- | ------------------------------------------- |
-| -------------- | --------------- | ------------------------------------------- |
-| -------------- | --------------- | ------------------------------------------- |
-| -------------- | --------------- | ------------------------------------------- |
-| -------------- | --------------- | ------------------------------------------- |
-| -------------- | --------------- | ------------------------------------------- |
-| -------------- | --------------- | ------------------------------------------- |
-| -------------- | --------------- | ------------------------------------------- |
+- [Professora Lorena Rabelo](https://www.linkedin.com/in/lorena-rabelo/), de quem usei o repositório do projeto da turma 10 como referência;
+- [Professota Barbara Aguilar](https://www.linkedin.com/in/barbara-aguilar/), de quem peguei parte do conteúdo da revisão no repositório de JavascriptI da turma 8;
+- [Professora Anna Flávia](https://www.linkedin.com/in/anna-flávia-2691a754/), de quem também peguei parte do conteúdo da revisão no repositório de Revisão da turma 6;
+
+E todas as minhas professoras e amigas do {reprograma} com quem sempre aprendo ♥️
