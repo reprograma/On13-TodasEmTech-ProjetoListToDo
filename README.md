@@ -48,7 +48,7 @@ Esta é a 9ª semana da turma online: Todas em Tech - Front-end, nesta aula do d
 - Não é permitido o uso de nenhuma biblioteca/framework para construção do projeto;
 - Temos um layout que deve ser seguido, mas é permitido incrementar seu projeto para entregar; 
 
-##### [Projeto modelo](https://reprograma-on13front-todolist-hoi3buouj-lilitbandeira.vercel.app)
+##### [Projeto modelo](https://reprograma-on13front-todolist.vercel.app)
 
 ### Instruções:
 
