@@ -40,7 +40,6 @@ const botaoLimpa = document.getElementById('botao_limpa_id');
 
 
 
-
 // console.log(novaTarefa);
 // console.log(botaoAdd);
 // console.log(formulario);

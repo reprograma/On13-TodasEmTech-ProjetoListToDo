@@ -208,19 +208,19 @@ Usamos o método preventDefault() para cancelar a ação padrão que pertence a 
 #### 2.1. Etapas
 
 - __1.__ HTML
-    [ ] Criar estrutura da página;
+  - [x] Criar estrutura da página;
 - __2.__ CSS
-    [ ] Adicionar estilo;
+  - [x] Adicionar estilo;
 - __3.__ JavaScript
-    [ ] __3.1__ Capturar dados de __Entrada__ da usuária;
-    [ ] __3.2__ Adicionar itens na lista;
-    [ ] __3.3__ Marcar item como realizado;
-    [ ] __3.4__ Limpar input após adicionar item;
-    [ ] __3.5__ Validar campo de texto para não entrar itens vazios ou somente com espaços;
-    [ ] __3.6__ Poder excluir itens da lista individualmente;
-    [ ] __3.7__ Marcar/Desmarcar todos os itens como feito;
-    [ ] __3.8__ Limpar lista, excluir todos os itens da lista;
-    [ ] __3.9__ Ao clicar em marcar todos, mudar texto do botão para desmarcar todos;
+  - [x] __3.1__ Capturar dados de __Entrada__ da usuária;
+  - [ ] __3.2__ Adicionar itens na lista;
+  - [ ] __3.3__ Validar campo de texto para não entrar itens vazios ou somente com espaços;
+  - [ ] __3.4__ Limpar input após adicionar item;
+  - [ ] __3.5__ Marcar item como realizado;
+  - [ ] __3.6__ Poder excluir itens da lista individualmente;
+  - [ ] __3.7__ Marcar/Desmarcar todos os itens como feito;
+  - [ ] __3.8__ Limpar lista, excluir todos os itens da lista;
+  - [ ] __3.9__ Ao clicar em marcar todos, mudar texto do botão para desmarcar todos;
     
     ##### Para usar no projeto: 🔘 🟢 🟣 🗑
 #### 2.2. Desafio
