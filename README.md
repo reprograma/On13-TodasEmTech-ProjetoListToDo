@@ -118,7 +118,7 @@ Esta é a 9ª semana da turma online: Todas em Tech - Front-end, nesta aula do d
   ```
   const alunas = ["Lilit, Analu, Beatriz, Simara"]
   const cidades = new Array('Recife', 'São Paulo', 'Manaus')
-  const cursos = "frontend backend".slit(' ')
+  const cursos = "frontend backend".split(' ')
   const tecnologias = Array.of('HTML', 'CSS', JS)
   ```
 
