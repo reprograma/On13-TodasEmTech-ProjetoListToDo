@@ -20,6 +20,35 @@ body {
   align-items: center;
 }
 
+/* DESAFIO 1 */
+.erro {
+  animation: alerta .3s linear;
+} /* classe criada para mudar estilo do input quando vazio*/
+
+@keyframes alerta {
+  0% {
+    border: solid 1px #ee5253;
+    background-color: #ff6b6b50;
+  }
+  25% {
+    border: solid 1px #c8d6e5;
+  }
+  50% {
+    border: solid 1px #ee5253;
+  }
+  75% {
+    border: solid 1px #c8d6e5;
+  }
+  100% {
+    border: solid 1px #ee5253;
+    background-color: #ff6b6b50;
+  }
+} /* animação usada no erro */
+
+.checked:before {
+  content: "🟣";
+}
+
 .container_principal {
   background-color: #f3f3f3;
   min-width: 40rem; /* 400px */
@@ -160,4 +189,69 @@ li > p {
 
 /* responsividade */
 
+@media only screen and (max-width: 480px) {
+  .container_principal {
+    min-width: 30rem;
+    padding: 1.5rem;
+  }
+  
+  .titulo_lista {
+    margin: 2rem 0;
+  font-size: 2rem;
+  }
+
+  .form_add {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .input_add {
+    width: 100%;
+    border-radius: .8rem;
+    font-size: 1.2rem;
+  }
+
+  .input_add:focus {
+    border-right: solid 1px #00d2d3;
+  }
+
+  .button_add {
+    padding: .5rem;
+    font-size: 1.3rem;
+    border-radius: .8rem;
+    margin-top: .5rem;
+  }
+
+  li {
+    font-size: 1.2rem;
+  }
+
+  .modelo {
+    min-height: 7rem;
+    padding: .5rem 0; 
+  }
+
+  .modelo_tarefa {
+    padding: .7rem; 
+  }
+
+  .modelo_conteudo {
+    padding: .6rem .5rem;
+  }
+
+  .container_botoes {
+    /* width: 100%; */
+    flex-direction: column;
+    margin: 2rem;
+  }
+
+  .button_marca, .button_limpa {
+    padding: .5rem;
+    font-size: 1.3rem;
+    width: 100%;
+  }
+  .button_limpa {
+    margin-top: .5rem ;
+  }
+}
 
