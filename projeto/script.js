@@ -1,4 +1,4 @@
-1. Capturar entradas e armazenar em variáveis
+// 1. Capturar entradas e armazenar em variáveis
 
 const novaTarefa = document.querySelector("#input_id");
 const botaoAdd = document.getElementById('botao_add_id');
