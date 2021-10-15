@@ -5,9 +5,6 @@ const listaDeTarefas = document.getElementById("lista_id");
 const botaoMarca = document.getElementById("botao_marca_id");
 const botaoLimpa = document.getElementById("botao_limpa_id");
 
-// 2. Processamentos através de eventos e funções
-
-// função de adicionar a partir do click da usuária, um evento
 botaoAdd.addEventListener("click", (event) => {
   event.preventDefault();
 
@@ -29,6 +26,7 @@ botaoAdd.addEventListener("click", (event) => {
 
   textoTarefa.innerText = novaTarefa.value;
   iconeDeleta.innerText = "🗑";
+  iconeDeleta.classList.add("button_deleta");
 
   if (textoTarefa.innerText.trim() === "") {
     // alert('Você precisa digitar alguma coisa!')
