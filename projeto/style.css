@@ -1,0 +1,163 @@
+/* resets */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-size: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* viewport */
+
+body {
+    min-height: 100vh; /*ocupa 100% da tela de qualquer dipositivo */
+    width: 100%; 
+    background-color: #ff6b6b50;
+    display: flex; /*o alinhamento dos itens será conforme declarado */
+    justify-content: center; /*na horizontal*/
+    align-items: center; /*aolinhar verticalmente*/
+}
+
+.checked:before {
+    content: "🟣";
+    font-size: 1.2rem;
+    margin-right: .5rem;
+
+}
+
+.containerPrincipal {
+    background-color: #f3f3f3;
+    min-width: 40rem; /* corresponde a 400px*/
+    max-height: 60vh; /*no mínimo 60% da tela que é 100%*/
+    padding: 2.5rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 2px 4px 15px #57657480;
+}
+
+.tituloLista{
+    margin: 2rem 0 3rem 0;
+    font-size: 2.5rem;
+    color: #10ac84;
+}
+
+.fomAdd {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    margin-bottom: 3rem;
+}
+
+.inputAdd {
+    width: 30rem;
+    height: 100%;
+    padding: 1.2rem 1rem;
+    background-color: #c8d6e5;
+    outline: none;
+    border: solid 1rem #c8d6e5;
+    border-radius: .8rem 0 0 .8rem; /*borde-rdiur: top-left top-right bottom left bottom-right*/ 
+    font-size: 1.4rem;
+    
+}
+
+.inputAdd:focus{
+    border: solid 1px #1dd1a1;
+    border-right: none;
+}
+
+.buttonAdd {
+    background-color: #1dd1a1;
+    color: #f3f3f3;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    border-radius: 0 .8rem .8rem 0;
+    border: none;
+    cursor: pointer;
+    transition: linear .3s;
+}
+
+.buttonAdd:hover {
+    background-color:#10ac84;
+    transition: linear .3s;
+}
+
+.containerTarefas {
+    width: 95%;
+    min-width: 10rem;
+    border-radius: .5rem;
+    padding: 1rem 0;
+    overflow-y: auto;
+}
+
+.listaTarefas {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    color: #222f3e;
+    padding: .8rem .5rem;
+}
+
+li > p, li > span {
+    font-size: 1.4rem;
+}
+
+li > p:before {
+    content: "🔘";
+    font-size: 1.2rem;
+    margin-right: .5rem;
+
+}
+
+li > p {
+    width: 80%;
+}
+
+.containerBotoes {
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3rem 0 2rem;
+}
+
+.buttonMarca {
+    background: #1dd1a1;
+    border: solid 1px #1dd1a1;
+}
+
+.buttonLimpa {
+    background: #ff6b6b;
+    border: solid 1px #ff6b6b;
+}
+
+.buttonLimpa, .buttonMarca {
+    color: #f3f3f3;
+    padding: 1.2rem 1rem;
+    font-size: 1.5rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    transition: linear .3s;
+}
+
+.buttonMarca:hover {
+    background: #f3f3f3;
+    color: #1dd1a1;
+    transition: linear .3s;
+
+}
+
+
+.buttonLimpa:hover {
+    background: #f3f3f3;
+    color: #ff6b6b;
+    transition: linear .3s;
+}
