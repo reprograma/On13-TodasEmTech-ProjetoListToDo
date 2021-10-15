@@ -225,7 +225,7 @@ Usamos o método preventDefault() para cancelar a ação padrão que pertence a 
     ##### Para usar no projeto: 🔘 🟢 🟣 🗑
 #### 2.2. Desafio
 
-- Criar animação pata quando a usuária tentar criar uma tarefa com uma string vazia ou somente com espaços ao invés de somente um alert;
+- Criar animação para quando a usuária tentar criar uma tarefa com uma string vazia ou somente com espaços ao invés de somente um alert;
 - Criar uma função que mude o texto do botão _Marcar/Desmarcar todos_: Se houver pelo menos uma tarefa desmarcada (_Marcar todos_) e caso todas sejam desmarcadas manualmente (_Desmarcar todos_)
 
 ## Referências 

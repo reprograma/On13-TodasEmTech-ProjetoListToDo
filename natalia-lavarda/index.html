@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="/natalia-lavarda/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main class="container_principal">
+        <h1 class="titulo_lista">Lista de Tarefas</h1>
+        <form id="form_id" action="" class="form_add">
+            <input id="input_id" type="text" name="tarefa" class="input_add" placeholder="Adicione uma tarefa">
+            <button id="botao_add_id" type="submit" class="button_add">Adicionar</button>
+        </form>
+        <div class="container_tarefas">
+            <ul id="lista_id" class="lista_tarefas"></ul>
+        </div>
+        <div class="container_botoes">
+            <button id="botao_marca_id" class="button_marca">Marcar todas</button>
+            <button id="botao_limpa_id" class="button_limpa">Limpar lista</button>
+        </div>
+        <div id="div-modal" class="modal" data-modal>
+            <div class="modal-content">
+                <div class="modal-close">
+                    <button class="btn-close" data-close>x</button>
+                </div>
+                <div class="illustration">
+                    <img src="./img/alert.svg" alt="Ilustração de menina e ponto de exclamação vermelho" class="alert-img">
+                </div>
+                <p class="modal-p">Você precisa digitar alguma coisa!</p>
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
