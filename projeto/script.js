@@ -1,3 +1,4 @@
+
 //1. Capturar entradas e armazenar em variáveis
 
 const novaTarefa = document.querySelector("#input_id");
@@ -11,6 +12,7 @@ const botaoLimpa = document.getElementById('botao_limpa_id');
 
 // função de adicionar a partir do click da usuária, um evento
 botaoAdd.addEventListener('click', (event) => {
+
     event.preventDefault()
 
     const elementoLista = document.createElement('li')
@@ -52,11 +54,13 @@ botaoAdd.addEventListener('click', (event) => {
         elementoLista.remove();
     })
     verificarMarcados() // chama a função do DESAFIO 2 para mudar o texto do botão quando adicionar nova tarefa, se necessário
+
 })
 
 // função para marcar todas as tarefas:
 
 botaoMarca.addEventListener('click', () => {
+
     let todasAsTarefas = document.querySelectorAll('p')
 
     if (botaoMarca.innerText === "Marcar todos") {
@@ -75,13 +79,16 @@ botaoMarca.addEventListener('click', () => {
 // função para limpar todas as tarefas:
 
 botaoLimpa.addEventListener('click', () => {
+
     listaDeTarefas.innerHTML = '';
+
 })
 
 // ### DESAFIO 2 ###
 // função que verifica se se todos estão marcados
 
 function verificarMarcados() {
+
     let todasAsTarefas = document.querySelectorAll('p')
     let verificacao = [] //array vazia que recebe as tarefas que estão desmarcadas (que não possui classe checked)
 

@@ -42,7 +42,9 @@ body {
 } /* animação usada no erro */
 
 .checked:before {
+
   content: "✔️";
+
 }
 
 .container_principal {
