@@ -1,13 +1,29 @@
 // 1. Capturar entradas e armazenar em variáveis
 
-const novaTarefa = document.querySelector("#input_id");
+/*
+Window - global
+DOM - é um objeto criado pelo navegador a partir do documento HTML
+Element - são todas as demais tags
+Attribute - href, src, class, name, rel, id
+Text - conteúdo de uma tag
+*/
+
+const novaTarefa = document.querySelector('#input_id');
 const botaoAdd = document.getElementById('botao_add_id');
-const formulario = document.getElementById('form_id');
+const formulario = document.getElementById('form_add');
 const listaDeTarefas = document.getElementById('lista_id');
 const botaoMarca = document.getElementById('botao_marca_id');
 const botaoLimpa = document.getElementById('botao_limpa_id');
 
+// console.log(novaTarefa);
+// console.log(botaoAdd);
+// console.log(formulario);
+// console.log(listaDeTarefas);
+// console.log(botaoMarca);
+// console.log(botaoLimpa);
+
 // 2. Processamentos através de eventos e funções
+
 
 // função de adicionar a partir do click da usuária, um evento
 botaoAdd.addEventListener('click', (event) => {
@@ -99,17 +115,3 @@ function verificarMarcados() {
   }
 } 
 
-// console.log(novaTarefa);
-// console.log(botaoAdd);
-// console.log(formulario);
-// console.log(listaDeTarefas);
-// console.log(botaoMarca);
-// console.log(botaoLimpa);
-
-/*
-DOM - é um objeto criado pelo navegador a partir do HTML
-document - tag html
-element - todas as demais tags
-Attribute - href, src, class, id
-text - conteudo de uma tag
-*/
