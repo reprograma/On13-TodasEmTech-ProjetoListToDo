@@ -6,6 +6,7 @@ const formulario = document.getElementById("form_id");
 const listaDeTarefas = document.getElementById("lista_id");
 const botaoMarca = document.getElementById("botao_marca_id");
 const botaoLimpa = document.getElementById("botao_limpa_id");
+const modal = document.querySelector(".container");
 
 // 2. Processamentos através de eventos e funções
 
@@ -21,8 +22,7 @@ botaoAdd.addEventListener("click", (event) => {
   iconeDeleta.innerText = "🗑";
 
   if (textoTarefa.innerText.trim() === "") {
-    alert("Você precisa digitar alguma coisa!");
-    /* DESAFIO 1
+    modal.classList.add("mostrar"); /* DESAFIO 1
     novaTarefa.classList.add('erro'); //adiciona classe erro ao elemento novaTarefa (input) - a classe está no css
     novaTarefa.addEventListener('animationend', event => { 
       novaTarefa.classList.remove('erro');
