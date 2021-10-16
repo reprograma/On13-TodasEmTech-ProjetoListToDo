@@ -54,6 +54,7 @@ body {
     outline: none;
     border: solid 1px #c8d6e5;
     border-radius: .8rem 0 0 .8rem;
+    font-size: 1.4rem;
 }
 
 .input_add:focus {
@@ -69,6 +70,8 @@ body {
     border: none;
     border-radius: 0 .8rem .8rem 0;
     cursor: pointer;
+    transition: linear .3s;
+
 }
 
 .button_add:hover {
@@ -133,6 +136,7 @@ li > p:before {
     font-size: 1.5rem;
     border-radius: .8rem;
     cursor: pointer;
+    transition: linear .3s;
  }
 
  .button_marca:hover  {
@@ -146,3 +150,71 @@ li > p:before {
      color: #f368e0;
      transition: linear .3s;
  }
+
+ /* responsividade */
+
+@media only screen and (max-width: 480px) {
+    .container_principal {
+      min-width: 30rem;
+      padding: 1.5rem;
+    }
+    
+    .titulo_lista {
+      margin: 2rem 0;
+    font-size: 2rem;
+    }
+  
+    .form_add {
+      flex-direction: column;
+      margin-bottom: 2rem;
+    }
+  
+    .input_add {
+      width: 100%;
+      border-radius: .8rem;
+      font-size: 1.2rem;
+    }
+  
+    .input_add:focus {
+      border-right: solid 1px #00d2d3;
+    }
+  
+    .button_add {
+      padding: .5rem;
+      font-size: 1.3rem;
+      border-radius: .8rem;
+      margin-top: .5rem;
+    }
+  
+    li {
+      font-size: 1.2rem;
+    }
+  
+    .modelo {
+      min-height: 7rem;
+      padding: .5rem 0; 
+    }
+  
+    .modelo_tarefa {
+      padding: .7rem; 
+    }
+  
+    .modelo_conteudo {
+      padding: .6rem .5rem;
+    }
+  
+    .container_botoes {
+      /* width: 100%; */
+      flex-direction: column;
+      margin: 2rem;
+    }
+  
+    .button_marca, .button_limpa {
+      padding: .5rem;
+      font-size: 1.3rem;
+      width: 100%;
+    }
+    .button_limpa {
+      margin-top: .5rem ;
+    }
+  }
