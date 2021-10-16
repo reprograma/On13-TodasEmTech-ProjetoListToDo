@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');    
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-color:#f5cd79;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checked:before {
+    content: "🟢";
+}
+
+.container_principal{
+    background-color: #f3f3f3;
+    min-width: 40rem;
+    max-width: 60vh;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 2px 4px 10px #cd6133;
+}
+
+.titulo_lista{
+    margin: 2rem 0 3rem 0;
+    font-size: 2.5rem;
+    color: #752323;
+}
+
+.form_add{
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    margin-bottom: 3rem;
+}
+
+.input_add{
+    width: 30rem;
+    height: 100%;
+    padding: 1.2rem 1rem;
+    background-color: #eedaf8;
+    outline: none;
+    border: solid 1px #eedaf8;
+    border-radius: 0.8rem 0 0 0.8rem;
+    font-size: 1.4rem;
+}
+
+.input_add:focus{
+    border: solid 1px #fad390;
+    border-right: none;
+}
+
+.button_add{
+    background-color: #fa983a;
+    color: #f3f3f3;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    border-radius: 0 0.8rem 0.8rem 0;
+    border: none;
+    cursor: pointer;
+    transition: linear 0.3s;
+}
+
+.button_add:hover{
+    background-color:#a56a21;
+    transition: linear 0.3s;
+}
+
+.container_tarefas{
+    width: 95%;
+    min-height: 10rem;
+    border-radius: 0.5rem;
+    padding: 1rem 0;
+    overflow-y: auto;
+}
+
+.lista_tarefas{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    color: #3d3d3d;
+    padding: 0.8rem 0.5rem;
+}
+
+li > p, li > span{
+    font-size: 1.4rem;
+}
+
+li > p:before {
+    content: "🔘";
+    font-size: 1.2rem;
+    margin-right: .5rem;
+}
+
+li > p { 
+    width: 80%;
+}
+
+.cointaner_botoes{
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3rem 0 2rem;
+}
+
+.button_marca{
+    background: #b71540;
+    border: solid 1px #b71540;
+}
+
+.button_limpa{
+    background: #e77f67;
+    border: solid 1px #e77f67;;
+
+}
+
+.button_marca, .button_limpa{
+    color:#f3f3f3;
+    padding: 1.2rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: linear 0.3s;
+}
+
+.button_marca:hover{
+    background: #f3f3f3;
+    color: #b71540;
+    transition: linear 0.3s;
+}
+
+.button_limpa:hover{
+    background: #f3f3f3;
+    color: #e77f67;
+    transition: linear 0.3s;
+}
+
+
+
+
