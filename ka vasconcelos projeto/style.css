@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/*Resets*/
+
+
+/* o tamanho padrão da fonte é 16px*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*viewport*/
+
+
+/*acrescentando 2 casas depois da cor, dá-se a tonalidade*/
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #C5682430;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checked:before {
+    content: "🟣"
+}
+
+
+/*min-width: 40rem; 400px - porque já se estipulou o valor na font-size*/
+
+.container_principal {
+    background-color: #F9E4C8;
+    min-width: 40rem;
+    max-height: 60vh;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 2px 4px 10px #59627560;
+}
+
+
+/*top -right-bottom-left*/
+
+.titulo_lista {
+    margin: 2rem 0 3rem 0;
+    font-size: 2.5rem;
+    color: #30395290;
+}
+
+
+/*formulário*/
+
+.form_add {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    width: 95%;
+}
+
+.input_add {
+    width: 30rem;
+    height: 100%;
+    padding: 1.2rem 1rem;
+    background-color: #FAEEE0;
+    outline: none;
+    border: solid 1px #FAEEE0;
+    border-radius: .8rem 0 0 .8rem;
+    font-size: 1.4rem;
+}
+
+
+/*com o input selecionado*/
+
+.input_add:focus {
+    border: solid 1px #fd964450;
+    border-right: none;
+}
+
+.button_add {
+    background-color: #fd964450;
+    color: #f3f3f3;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    border-radius: 0 .8rem .8rem 0;
+    border: none;
+    cursor: pointer;
+    transition: linear .2s;
+}
+
+
+/*quando o mouse estiver em cima do botão*/
+
+.button_add:hover {
+    background-color: #C7BEA2;
+    transition: linear .2s;
+}
+
+
+/*container de tarefas*/
+
+.container_tarefas {
+    width: 95%;
+    min-height: 10rem;
+    border-radius: .5rem;
+    padding: 1rem 0;
+    overflow-y: auto;
+}
+
+.lista_tarefas {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    color: #3d3d3d;
+    padding: .8rem .5rem;
+}
+
+li>p,
+li>span {
+    font-size: 1.4rem;
+}
+
+li>p:before {
+    content: "🔘";
+    font-size: 1.2rem;
+    margin-right: .5rem;
+}
+
+li>p {
+    display: flex;
+    align-items: center;
+}
+
+li>p {
+    width: 80%;
+}
+
+
+/*container so botões*/
+
+.container_botoes {
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem 0 2rem;
+}
+
+.button_marca {
+    background-color: #fd964450;
+    border: solid 1px #fd964450;
+}
+
+.button_limpa {
+    background: #30395290;
+    border: solid 1px #30395290;
+}
+
+.button_limpa,
+.button_marca {
+    color: #f3f3f3;
+    padding: 1.2rem 1rem;
+    font-size: 1.5rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    transition: linear .2s;
+}
+
+.button_marca:hover {
+    background: #f3f3f3;
+    color: #fd964450;
+    transition: linear .2s;
+}
+
+.button_limpa:hover {
+    background: #f3f3f3;
+    color: #30395290;
+    transition: linear .2s;
+}

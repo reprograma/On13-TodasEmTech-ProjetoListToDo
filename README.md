@@ -159,7 +159,7 @@ Esta é a 9ª semana da turma online: Todas em Tech - Front-end, nesta aula do d
 
   ```
   const executarTodos = frutas.map(element => element = "🍇")
-  console.log(executarTodos) // retorn  ['🍇', '🍇', '🍇', '🍇', '🍇', '🍇']
+  console.log(executarTodos) // return  ['🍇', '🍇', '🍇', '🍇', '🍇', '🍇']
   ```
 
  `forEach:`
