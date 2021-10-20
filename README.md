@@ -9,6 +9,8 @@ Esta é a 9ª semana da turma online: Todas em Tech - Front-end, nesta aula do d
   - Eventos;
 - Projeto ToDoList
 
+link do projeto pronto: https://projeto-to-do.netlify.app/
+
 <br>
 
 ## Apresentação
