@@ -22,6 +22,11 @@ body{
   align-items: center;
 }
 
+.checked:before {
+  
+  content: "🔵";
+
+}
 .container_principal{
   background-color: #f3f3f3;
   min-width: 40rem; /*400px*/
