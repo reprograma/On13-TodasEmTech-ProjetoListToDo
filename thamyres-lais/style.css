@@ -118,6 +118,7 @@ body {
   border-radius: .5rem;
   padding: 1rem 0;
   overflow-y: auto ;
+  display: none;
 }
 
 .lista_tarefas {
@@ -147,6 +148,36 @@ li > p {
   width: 80%;
 }
 
+/* container modelo*/
+.modelo {
+  width: 95%;
+  min-height: 10rem;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.modelo_tarefa {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #8395a770;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.modelo_conteudo {
+  padding: .8rem .5rem;
+  background: #c3f3d990;
+  border-radius: .5rem;
+
+}
+
+.modelo_tarefa :last-child {
+  opacity: .6;
+}
 /* container dos botões */
 
 .container_botoes {
