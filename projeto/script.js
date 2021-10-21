@@ -6,6 +6,9 @@ const formulario = document.getElementById('form_id');
 const listaDeTarefas = document.getElementById('lista_id');
 const botaoMarca = document.getElementById('botao_marca_id');
 const botaoLimpa = document.getElementById('botao_limpa_id');
+// para o desafio extra
+const modelo = document.getElementById('modelo_id')
+const containerDeTarefas = document.getElementById('tarefas_id')
 
 // 2. Processamentos através de eventos e funções
 
@@ -21,16 +24,17 @@ botaoAdd.addEventListener('click', (event) => {
   iconeDeleta.innerText = "🗑"
 
   if(textoTarefa.innerText.trim() === '') {
-    alert('Você precisa digitar alguma coisa!')
-    /* DESAFIO 1
+    // alert('Você precisa digitar alguma coisa!')
     novaTarefa.classList.add('erro'); //adiciona classe erro ao elemento novaTarefa (input) - a classe está no css
     novaTarefa.addEventListener('animationend', event => { 
       novaTarefa.classList.remove('erro');
-    }) */
+    })
   } else {
     listaDeTarefas.appendChild(elementoLista)
     elementoLista.appendChild(textoTarefa)
     elementoLista.appendChild(iconeDeleta)
+    modelo.style.display = "none"
+    containerDeTarefas.style.display = "block"
     formulario.reset()
   }
   novaTarefa.focus()
@@ -50,6 +54,11 @@ botaoAdd.addEventListener('click', (event) => {
   iconeDeleta.addEventListener('click', () => {
     // elementoLista.removeChild(elementoLista)
     elementoLista.remove();
+    if(listaDeTarefas.innerText == '') {
+      modelo.style.display = "flex"
+      containerDeTarefas.style.display = "none"
+    } 
+    verificarMarcados();
   })
   verificarMarcados() // chama a função do DESAFIO 2 para mudar o texto do botão quando adicionar nova tarefa, se necessário
 })
@@ -76,6 +85,8 @@ botaoMarca.addEventListener('click', () => {
 
 botaoLimpa.addEventListener('click', () => {
   listaDeTarefas.innerHTML = '';
+  modelo.style.display = "flex";
+  containerDeTarefas.style.display = "none"
 })
 
 // ### DESAFIO 2 ###
