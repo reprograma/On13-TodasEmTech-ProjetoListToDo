@@ -1,52 +1,71 @@
-
- //criar objeto, duas formas
- //objeto = chave(propriedade) e valor(dados)
-//  const aluna = new Object()
-//  aluna.nome = "Nayara"
-//  aluna.curso = "frontend"
  
-// aluna = {
-// nome: "Maria",
-// curso: "frontend",
-//}
-//aluna.cidade = "Porto Alegre"
-//console.log(aluna.nome)
+const aluna = new Object()
+aluna.nome = "Nayara"
+aluna.curso = "frontend"
 
-//function nomear() {}
+//objeto ->  chave: valor
 
-//desestrurização de objeto, armanenar uma propriedade de um objeto sem colocar o .nome
-//const { nome, cidade } = monitora
-//console.log(nome)
+const monitora = {
+  nome: "Thiele",
+  curso: "frontend"
+}
 
-//const alunas = new Array.of('Júlia', 'Celina', 'Bruna')
-//alunas = ['Júlia', 'Celina', 'Bruna'] - mesma coisa
-//const cursos = ['frontend', 'backend']
+monitora.cidade = "Barueri"
 
-//console.log(alunas.length)
+// console.log(monitora.cidade)
+// console.log(aluna.curso)
 
-//const alfabeto = "ABCDE"
-//const ArrayAlfabeto = alfabeto.split('')
+const { nome, cidade } = monitora
 
-//const arrayPalavras ="oi, minha gente".split(' ')
-//(' ') este espaço quebra quando aparece na tela-um espaço
-//console.log(arrayPalavras)
+// console.log(cidade)
+//Arrays -> [0, 1, 2, 3, 4, 5, 6, 7]
+
+const alunas = Array.of('Julia', 'Celina', 'Bruna')
+const cursos = ['frontend', 'backend']
+
+const alfabeto = "ABCDE"
+
+const arrayAlfabeto = alfabeto.split('')
+
+const arrayPalavras = "oi minha gente".split('')
+
+// console.log()
+
+// function somar(numero) {
+//   return console.log(numero + numero)
+// }
+
+// somar(2)
 
 const frutas = ['🍎', '🍇', '🍎', '🍌', '🍎', '🥑']
-//console.log(frutas.length) length é propriedade, traz informações
 
-//callback funçao que se passa de parâmetro para outra função
-const encontrarElemento = frutas.find(function(elemento) => item == "🍎"{
+// console.log(frutas.length) //length é propriedade, trás informações
+// métodos possuem (), executam alguma coisa
 
-//frutas.find()
+// callback
 
+const encontrarElemento = frutas.find((elemento) => elemento == '🍌')
+const FiltrarPor = frutas.filter((elemento) => elemento == '🍎')
+const executarEmTodos = frutas.map((fruta) => fruta = "🍇" )
+const verTodos = frutas.forEach((fruta) => console.log(fruta)) 
 
-
-
-
-
-
-
-
+console.log(verTodos)
+console.log(frutas)
 
 
+// function callbackFind(elemento) {
+//   return elemento == "🍎"
+// }
 
+
+
+// const numeros = [1, 2, 3, 4]
+
+// const nova = numeros.map(numero => numero * 2)
+
+// console.log(nova)
+
+
+.innerText
+
+document.querySelector()
